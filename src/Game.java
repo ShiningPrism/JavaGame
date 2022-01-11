@@ -986,20 +986,20 @@ public class Game {
         System.out.println();
         System.out.println(ANSI_PURPLE + "-----===| [Achievements] |===-----" + ANSI_RESET);
         System.out.println(ANSI_YELLOW + "        • Summation Mode •" + ANSI_RESET);
-        acN1();
-        acN2();
-        acN3();
+        acN1points1();
+        acN2right();
+        acN3wrong();
         System.out.println(ANSI_PURPLE + "-----===|" + ANSI_YELLOW + " <- /page 1 " + ANSI_PURPLE + "|===-----" + ANSI_RESET);
         System.out.println();
     }
 
-    void acN1 () {
+    void acN1points1 () {
         int a = points1;
         float b;
         a = Math.round(a);
         b = (int) a;
         if (points1 <= 10) {
-            System.out.print(ANSI_RED + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "The king of summation I: " + points1 + "/10" + ANSI_RESET);
+            System.out.print(ANSI_RED + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "The king of summation I: " + points1 + "/10 points 1-rs tier." + ANSI_RESET);
             System.out.println();
             if (points1 == 0) {
                 System.out.println("Progress: " + ANSI_RED + "•••••••••••••••••••• " + ANSI_RED + "0%" + ANSI_RESET);
@@ -1028,7 +1028,7 @@ public class Game {
 
         if (points1 >= 11) {
             if (points1 <= 50) {
-                System.out.print(ANSI_YELLOW + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "The king of summation II: " + points1 + "/50" + ANSI_RESET);
+                System.out.print(ANSI_YELLOW + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "The king of summation II: " + points1 + "/50 points 1-rs tier." + ANSI_RESET);
                 System.out.println();
                 if (b / 50 * 100 <= 10) {
                     System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "•••••••••••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
@@ -1056,7 +1056,7 @@ public class Game {
 
         if (points1 >= 51) {
             if (points1 <= 200) {
-                System.out.print(ANSI_YELLOW + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "The king of summation III: " + points1 + "/200" + ANSI_RESET);
+                System.out.print(ANSI_YELLOW + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "The king of summation III: " + points1 + "/200 points 1-rs tier." + ANSI_RESET);
                 System.out.println();
                 if (b / 200 * 100 <= 10) {
                     System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "•••••••••••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
@@ -1083,7 +1083,7 @@ public class Game {
         }
 
         if (points1 >= 201) {
-            System.out.print(ANSI_GREEN + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "The king of summation III" + ANSI_RESET);
+            System.out.print(ANSI_GREEN + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "The king of summation IV!" + ANSI_PURPLE + " | " + ANSI_YELLOW + points1 + ANSI_CYAN + " points 1-rs tier!" + ANSI_RESET);
             System.out.println();
             System.out.println("Progress: " + ANSI_PURPLE + "•••••••••••••••••••• " + ANSI_GREEN + "Completed!" + ANSI_RESET);
         }
@@ -1091,13 +1091,13 @@ public class Game {
         System.out.println();
     }
 
-    void acN2 () {
+    void acN2right () {
         int x = right;
         float y;
         x = Math.round(x);
         y = (int) x;
         if (right <= 10) {
-            System.out.print(ANSI_RED + "✔" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of the right answers I: " + right + "/10 " + ANSI_RESET);
+            System.out.print(ANSI_RED + "✔" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of the right answers I: " + right + "/10 right answers." + ANSI_RESET);
             System.out.println();
             if (right == 0) {
                 System.out.println("Progress: " + ANSI_RED + "•••••••••••••••••••• " + ANSI_RED + "0%" + ANSI_RESET);
@@ -1126,7 +1126,7 @@ public class Game {
 
         if (right >= 11) {
             if (right <= 50) {
-                System.out.print(ANSI_YELLOW + "✔" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of the right answers II: " + right + "/50" + ANSI_RESET);
+                System.out.print(ANSI_YELLOW + "✔" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of the right answers II: " + right + "/50 right answers." + ANSI_RESET);
                 System.out.println();
                 if (y / 50 * 100 <= 10) {
                     System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "•••••••••••••••••• " + ANSI_YELLOW + (y / 50 * 100) + "%" + ANSI_RESET);
@@ -1154,7 +1154,7 @@ public class Game {
 
         if (right >= 51) {
             if (right <= 200) {
-                System.out.print(ANSI_YELLOW + "✔" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of the right answers III: " + right + "/200" + ANSI_RESET);
+                System.out.print(ANSI_YELLOW + "✔" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of the right answers III: " + right + "/200 right answers." + ANSI_RESET);
                 System.out.println();
                 if (y / 200 * 100 <= 10) {
                     System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "••••••••••••••••••" + ANSI_YELLOW + (y / 200 * 100) + "%" + ANSI_RESET);
@@ -1181,7 +1181,7 @@ public class Game {
         }
 
         if (right >= 201) {
-            System.out.print(ANSI_GREEN + "✔" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of the right answers III" + ANSI_RESET);
+            System.out.print(ANSI_GREEN + "✔" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of the right answers IV!" + ANSI_PURPLE + " | " + ANSI_GREEN + right + ANSI_CYAN + " right answers!" + ANSI_RESET);
             System.out.println();
             System.out.println("Progress: " + ANSI_PURPLE + "•••••••••••••••••••• " + ANSI_GREEN + "Completed!" + ANSI_RESET);
         }
@@ -1189,13 +1189,13 @@ public class Game {
         System.out.println();
     }
 
-    void acN3 () {
+    void acN3wrong () {
         int c = wrong;
         float d;
         c = Math.round(c);
         d = (int) c;
         if (wrong <= 10) {
-            System.out.print(ANSI_RED + "✘" + ANSI_PURPLE + " | " + ANSI_CYAN + "Do you even know how to count? I: " + wrong + "/10" + ANSI_RESET);
+            System.out.print(ANSI_RED + "✘" + ANSI_PURPLE + " | " + ANSI_CYAN + "Do you even know how to count? I: " + wrong + "/10 wrong answers" + ANSI_RESET);
             System.out.println();
             if (wrong == 0) {
                 System.out.println("Progress: " + ANSI_RED + "•••••••••••••••••••• " + ANSI_RED + "0%" + ANSI_RESET);
@@ -1224,7 +1224,7 @@ public class Game {
 
         if (wrong >= 11) {
             if (wrong <= 50) {
-                System.out.print(ANSI_YELLOW + "✘" + ANSI_PURPLE + " | " + ANSI_CYAN + "Do you even know how to count? II: " + wrong + "/50" + ANSI_RESET);
+                System.out.print(ANSI_YELLOW + "✘" + ANSI_PURPLE + " | " + ANSI_CYAN + "Do you even know how to count? II: " + wrong + "/50 wrongs answers." + ANSI_RESET);
                 System.out.println();
                 if (d / 50 * 100 <= 10) {
                     System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "•••••••••••••••••• " + ANSI_YELLOW + (d / 50 * 100) + "%" + ANSI_RESET);
@@ -1252,7 +1252,7 @@ public class Game {
 
         if (wrong >= 51) {
             if (wrong <= 200) {
-                System.out.print(ANSI_YELLOW + "✘" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of the right answers III: " + wrong + "/200" + ANSI_RESET);
+                System.out.print(ANSI_YELLOW + "✘" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of the right answers III: " + wrong + "/200 wrong answers." + ANSI_RESET);
                 System.out.println();
                 if (d / 200 * 100 <= 10) {
                     System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "••••••••••••••••••" + ANSI_YELLOW + (d / 200 * 100) + "%" + ANSI_RESET);
@@ -1279,7 +1279,7 @@ public class Game {
         }
 
         if (wrong >= 201) {
-            System.out.print(ANSI_GREEN + "✘" + ANSI_PURPLE + " | " + ANSI_CYAN + "Do you even know how to count? III" + ANSI_RESET);
+            System.out.print(ANSI_GREEN + "✘" + ANSI_PURPLE + " | " + ANSI_CYAN + "Do you even know how to count...? IV!" + ANSI_PURPLE + " | " + ANSI_RED + wrong + ANSI_CYAN + " wrong answers!" + ANSI_RESET);
             System.out.println();
             System.out.println("Progress: " + ANSI_PURPLE + "•••••••••••••••••••• " + ANSI_GREEN + "Completed!" + ANSI_RESET);
         }
