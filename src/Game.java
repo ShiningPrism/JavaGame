@@ -940,6 +940,10 @@ public class Game {
                     pageMain1();
                 } else if (page.equalsIgnoreCase("/page 2")) {
                     pageAC2();
+                } else if (page.equalsIgnoreCase("/page 3")) {
+                    pageAC3();
+                } else if (page.equalsIgnoreCase("/page 4")) {
+                    pageAC4();
                 } else if (page.equalsIgnoreCase("/back")) {
                     newEquation();
                     eSumClass();
@@ -987,8 +991,30 @@ public class Game {
         System.out.println(ANSI_PURPLE + "-----===| [Achievements] |===-----" + ANSI_RESET);
         System.out.println(ANSI_YELLOW + "        • Summation Mode •" + ANSI_RESET);
         acN1points1();
-        acN2right();
-        acN3wrong();
+        acN2points2();
+        acN3points3();
+        System.out.println(ANSI_PURPLE + "-----===|" + ANSI_YELLOW + " <- /page 1 " + ANSI_PURPLE + "|===-----" + ANSI_RESET);
+        System.out.println();
+    }
+
+    void pageAC3() {
+        System.out.println();
+        System.out.println(ANSI_PURPLE + "-----===| [Achievements] |===-----" + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "        • Summation Mode •" + ANSI_RESET);
+
+
+
+        System.out.println(ANSI_PURPLE + "-----===|" + ANSI_YELLOW + " <- /page 1 " + ANSI_PURPLE + "|===-----" + ANSI_RESET);
+        System.out.println();
+    }
+
+    void pageAC4() {
+        System.out.println();
+        System.out.println(ANSI_PURPLE + "-----===| [Achievements] |===-----" + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "        • Summation Mode •" + ANSI_RESET);
+
+
+
         System.out.println(ANSI_PURPLE + "-----===|" + ANSI_YELLOW + " <- /page 1 " + ANSI_PURPLE + "|===-----" + ANSI_RESET);
         System.out.println();
     }
@@ -1090,8 +1116,202 @@ public class Game {
 
         System.out.println();
     }
+    void acN2points2 () {
+        int a = points2;
+        float b;
+        a = Math.round(a);
+        b = (int) a;
+        if (points2 <= 10) {
+            System.out.print(ANSI_RED + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of Subtraction I: " + points2 + "/10 points 2-nd tier." + ANSI_RESET);
+            System.out.println();
+            if (points2 == 0) {
+                System.out.println("Progress: " + ANSI_RED + "•••••••••••••••••••• " + ANSI_RED + "0%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 10) {
+                System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "•••••••••••••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 20) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••" + ANSI_RED + "•••••••••••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 30) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••" + ANSI_RED + "•••••••••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 40) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••" + ANSI_RED + "•••••••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 50) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••••" + ANSI_RED + "•••••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 60) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••••••" + ANSI_RED + "•••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 70) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••" + ANSI_RED + "•••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 80) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••" + ANSI_RED + "•••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 90) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••••" + ANSI_RED + "•• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 >= 100) {
+                System.out.println("Progress: " + ANSI_GREEN + "•••••••••••••••••••• " + ANSI_GREEN + "100%" + ANSI_RESET);
+            }
+        }
 
-    void acN2right () {
+        if (points2 >= 11) {
+            if (points2 <= 50) {
+                System.out.print(ANSI_YELLOW + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of Subtraction II: " + points2 + "/50 points 2-rs tier." + ANSI_RESET);
+                System.out.println();
+                if (b / 50 * 100 <= 10) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "•••••••••••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 20) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••" + ANSI_RED + "•••••••••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 30) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••" + ANSI_RED + "•••••••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 40) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••" + ANSI_RED + "•••••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 50) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••" + ANSI_RED + "•••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 60) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••" + ANSI_RED + "•••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 70) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••" + ANSI_RED + "•••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 80) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••" + ANSI_RED + "•••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 90) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••••" + ANSI_RED + "•• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 >= 100) {
+                    System.out.println("Progress: " + ANSI_GREEN + "•••••••••••••••••••• " + ANSI_GREEN + "100%" + ANSI_RESET);
+                }
+            }
+        }
+
+        if (points2 >= 51) {
+            if (points2 <= 200) {
+                System.out.print(ANSI_YELLOW + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of Subtraction III: " + points2 + "/200 points 2-nd tier." + ANSI_RESET);
+                System.out.println();
+                if (b / 200 * 100 <= 10) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "•••••••••••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 20) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••" + ANSI_RED + "•••••••••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 30) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••" + ANSI_RED + "•••••••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 40) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••" + ANSI_RED + "•••••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 50) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••" + ANSI_RED + "•••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 60) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••" + ANSI_RED + "•••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 70) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••" + ANSI_RED + "•••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 80) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••" + ANSI_RED + "•••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 90) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••••" + ANSI_RED + "•• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 >= 100) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••••••" + ANSI_GREEN + "100%" + ANSI_RESET);
+                }
+            }
+        }
+
+        if (points2 >= 201) {
+            System.out.print(ANSI_GREEN + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "Lord of Subtraction IV!" + ANSI_PURPLE + " | " + ANSI_YELLOW + points2 + ANSI_CYAN + " points 2-nd tier!" + ANSI_RESET);
+            System.out.println();
+            System.out.println("Progress: " + ANSI_PURPLE + "•••••••••••••••••••• " + ANSI_GREEN + "Completed!" + ANSI_RESET);
+        }
+
+        System.out.println();
+    }
+    void acN3points3 () {
+        int a = points3;
+        float b;
+        a = Math.round(a);
+        b = (int) a;
+        if (points3 <= 10) {
+            System.out.print(ANSI_RED + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "I can do better! I: " + points3 + "/10 points 3-rd tier." + ANSI_RESET);
+            System.out.println();
+            if (points3 == 0) {
+                System.out.println("Progress: " + ANSI_RED + "•••••••••••••••••••• " + ANSI_RED + "0%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 10) {
+                System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "•••••••••••••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 20) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••" + ANSI_RED + "•••••••••••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 30) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••" + ANSI_RED + "•••••••••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 40) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••" + ANSI_RED + "•••••••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 50) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••••" + ANSI_RED + "•••••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 60) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••••••" + ANSI_RED + "•••••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 70) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••" + ANSI_RED + "•••••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 80) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••" + ANSI_RED + "•••• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 <= 90) {
+                System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••••" + ANSI_RED + "•• " + ANSI_YELLOW + (b / 10 * 100) + "%" + ANSI_RESET);
+            } else if (b / 10 * 100 >= 100) {
+                System.out.println("Progress: " + ANSI_GREEN + "•••••••••••••••••••• " + ANSI_GREEN + "100%" + ANSI_RESET);
+            }
+        }
+
+        if (points3 >= 11) {
+            if (points3 <= 50) {
+                System.out.print(ANSI_YELLOW + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "I can do better! II: " + points3 + "/50 points 3-rd tier." + ANSI_RESET);
+                System.out.println();
+                if (b / 50 * 100 <= 10) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "•••••••••••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 20) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••" + ANSI_RED + "•••••••••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 30) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••" + ANSI_RED + "•••••••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 40) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••" + ANSI_RED + "•••••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 50) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••" + ANSI_RED + "•••••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 60) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••" + ANSI_RED + "•••••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 70) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••" + ANSI_RED + "•••••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 80) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••" + ANSI_RED + "•••• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 <= 90) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••••" + ANSI_RED + "•• " + ANSI_YELLOW + (b / 50 * 100) + "%" + ANSI_RESET);
+                } else if (b / 50 * 100 >= 100) {
+                    System.out.println("Progress: " + ANSI_GREEN + "•••••••••••••••••••• " + ANSI_GREEN + "100%" + ANSI_RESET);
+                }
+            }
+        }
+
+        if (points3 >= 51) {
+            if (points3 <= 200) {
+                System.out.print(ANSI_YELLOW + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "I can do better! III: " + points3 + "/200 points 3-rd tier." + ANSI_RESET);
+                System.out.println();
+                if (b / 200 * 100 <= 10) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••" + ANSI_RED + "•••••••••••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 20) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••" + ANSI_RED + "•••••••••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 30) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••" + ANSI_RED + "•••••••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 40) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••" + ANSI_RED + "•••••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 50) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••" + ANSI_RED + "•••••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 60) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••" + ANSI_RED + "•••••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 70) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••" + ANSI_RED + "•••••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 80) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••" + ANSI_RED + "•••• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 <= 90) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••••" + ANSI_RED + "•• " + ANSI_YELLOW + (b / 200 * 100) + "%" + ANSI_RESET);
+                } else if (b / 200 * 100 >= 100) {
+                    System.out.println("Progress: " + ANSI_GREEN + "••••••••••••••••••••" + ANSI_GREEN + "100%" + ANSI_RESET);
+                }
+            }
+        }
+
+        if (points3 >= 201) {
+            System.out.print(ANSI_GREEN + "\uD83D\uDC51" + ANSI_PURPLE + " | " + ANSI_CYAN + "I can do better IV!" + ANSI_PURPLE + " | " + ANSI_YELLOW + points2 + ANSI_CYAN + " points 3-rd tier!" + ANSI_RESET);
+            System.out.println();
+            System.out.println("Progress: " + ANSI_PURPLE + "•••••••••••••••••••• " + ANSI_GREEN + "Completed!" + ANSI_RESET);
+        }
+
+        System.out.println();
+    }
+
+    void acN4right () {
         int x = right;
         float y;
         x = Math.round(x);
@@ -1188,8 +1408,7 @@ public class Game {
 
         System.out.println();
     }
-
-    void acN3wrong () {
+    void acN5wrong () {
         int c = wrong;
         float d;
         c = Math.round(c);
