@@ -21,6 +21,7 @@ public class Game {
      */
     String menu = "/menu";
     String help = "/help";
+    String settings = "/settings";
 
     /*
     Colors
